@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowSkin Naturals — Natural Skincare</title>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'META_PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-glow">Glow</span><span class="logo-skin">Skin</span>
+      <span class="logo-nat">Naturals</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active-link" onclick="closeMenu()">Home</a></li>
+      <li><a href="products.html" onclick="closeMenu()">Products</a></li>
+      <li><a href="reviews.html" onclick="closeMenu()">Reviews</a></li>
+      <li><a href="social.html" onclick="closeMenu()">Social</a></li>
+      <li><a href="about.html" onclick="closeMenu()">About</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaPi4slLabPhe-GNXSVw2Zmjw1OLrXjboKRof2g9LixX2TIg/viewform?usp=header" target="_blank" class="nav-cta" onclick="trackEvent('survey_click','navbar')">Take Survey</a></li>
+      <li>
+        <a href="cart.html" class="nav-cart" onclick="trackEvent('cart_click','navbar')">
+          <i class="fa-solid fa-bag-shopping"></i>
+          Cart <span id="cartCount">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Natural · Trusted · Radiant</span>
+      <h1 class="hero-title">
+        Your Skin Deserves<br>
+        <em>Pure Goodness</em>
+      </h1>
+      <p class="hero-desc">
+        Gentle botanical skincare made for everyday routines, warm weather, and naturally glowing skin.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="products.html" class="btn btn-primary" onclick="trackEvent('shop_now_click','hero')">
+          Shop Products
+        </a>
+        <a href="reviews.html" class="btn btn-outline" onclick="trackEvent('read_reviews_click','hero')">
+          Read Reviews
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaPi4slLabPhe-GNXSVw2Zmjw1OLrXjboKRof2g9LixX2TIg/viewform?usp=header" target="_blank" class="btn btn-ghost" onclick="trackEvent('survey_click','hero')">
+          Take Survey
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">4.7</span>
+          <span class="stat-lbl">Average Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">250+</span>
+          <span class="stat-lbl">Customer Reviews</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">10k+</span>
+          <span class="stat-lbl">Social Followers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">98%</span>
+          <span class="stat-lbl">Would Recommend</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-image-frame">
+        <img src="images/Tophome.png"
+             alt="GlowSkin Natural Skincare Products" class="hero-img" />
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-products">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Featured Products</span>
+      <h2 class="section-title">Skincare Bestsellers</h2>
+      <p class="section-sub">Start with our most-loved formulas for glow, hydration, and daily freshness.</p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/vitcserum.png" alt="Vitamin C Serum" class="product-img">
+          <span class="product-badge">Best Seller</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">GlowSkin Vitamin C Serum</h3>
+          <p class="product-desc">Brightens, evens skin tone, and supports a healthy-looking glow.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(87 reviews)</span></div>
+          <div class="product-price">LKR 2,850</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="GlowSkin Vitamin C Serum" data-price="2850">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/aloegel.png" alt="Aloe Hydration Gel" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Aloe Hydration Gel</h3>
+          <p class="product-desc">Lightweight aloe gel that cools, hydrates, and calms the skin.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(63 reviews)</span></div>
+          <div class="product-price">LKR 1,490</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="Aloe Hydration Gel" data-price="1490">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/rose water.png" alt="Rose Water Toner" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Rose Water Toner</h3>
+          <p class="product-desc">Refreshing toner that helps skin feel soft, balanced, and clean.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(72 reviews)</span></div>
+          <div class="product-price">LKR 1,600</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="Rose Water Toner" data-price="1600">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-btn">
+      <a href="products.html" class="btn btn-outline">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-about">
+  <div class="container about-grid">
+    <div>
+      <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=700&q=80" alt="GlowSkin skincare routine" class="about-img">
+    </div>
+
+    <div class="about-content">
+      <span class="section-eyebrow">Our Story</span>
+      <h2 class="section-title" style="text-align:left">Skincare Made for Everyday Glow</h2>
+      <p>
+        GlowSkin Naturals creates gentle botanical skincare for people who want simple routines and visible results.
+      </p>
+      <p style="margin-top:14px">
+        Our products are lightweight, comfortable, and made for daily use in warm weather.
+      </p>
+
+      <div class="about-values">
+        <div class="value-item">
+          <span class="value-icon"><i class="fa-solid fa-leaf"></i></span>
+          <div>
+            <strong>Skin-Loving Ingredients</strong>
+            <p>Carefully selected botanical extracts and gentle actives.</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <span class="value-icon"><i class="fa-solid fa-droplet"></i></span>
+          <div>
+            <strong>Simple Daily Care</strong>
+            <p>Easy formulas for cleansing, hydrating, and glowing skin.</p>
+          </div>
+        </div>
+
+        <div class="value-item">
+          <span class="value-icon"><i class="fa-regular fa-comments"></i></span>
+          <div>
+            <strong>Customer-Led Improvements</strong>
+            <p>Reviews and feedback help us improve every product experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="logo-glow">Glow</span><span class="logo-skin">Skin</span>
+        <span class="logo-nat">Naturals</span>
+      </div>
+      <p class="footer-tagline">Natural skincare powered by botanical ingredients, simple routines, and customer trust.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Feedback</h4>
+      <ul>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaPi4slLabPhe-GNXSVw2Zmjw1OLrXjboKRof2g9LixX2TIg/viewform?usp=header" target="_blank">Take Survey</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaPi4slLabPhe-GNXSVw2Zmjw1OLrXjboKRof2g9LixX2TIg/viewform?usp=header" target="_blank">Submit Review</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="footer-social-icons">
+        <a href="social.html"><i class="fa-brands fa-instagram"></i></a>
+        <a href="social.html"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="social.html"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="social.html"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2025 GlowSkin Naturals · Natural Skincare Store</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

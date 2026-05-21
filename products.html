@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — GlowSkin Naturals</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'META_PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-glow">Glow</span><span class="logo-skin">Skin</span>
+      <span class="logo-nat">Naturals</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="products.html" class="active-link" onclick="closeMenu()">Products</a></li>
+      <li><a href="reviews.html" onclick="closeMenu()">Reviews</a></li>
+      <li><a href="social.html" onclick="closeMenu()">Social</a></li>
+      <li><a href="about.html" onclick="closeMenu()">About</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfaPi4slLabPhe-GNXSVw2Zmjw1OLrXjboKRof2g9LixX2TIg/viewform?usp=header" target="_blank" class="nav-cta">Take Survey</a></li>
+      <li>
+        <a href="cart.html" class="nav-cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          Cart <span id="cartCount">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow">Our Collection</span>
+    <h1 class="section-title">Natural Skincare Products</h1>
+    <p class="section-sub">Choose your favourites and add them to your cart.</p>
+  </div>
+</section>
+
+<section class="section-products">
+  <div class="container">
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/vitcserum.png" alt="Vitamin C Serum" class="product-img">
+          <span class="product-badge">Best Seller</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">GlowSkin Vitamin C Serum</h3>
+          <p class="product-desc">Brightens, evens skin tone, and supports a healthy-looking glow.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(87 reviews)</span></div>
+          <div class="product-price">LKR 2,850</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="GlowSkin Vitamin C Serum" data-price="2850">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/aloegel.png" alt="Aloe Hydration Gel" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Aloe Hydration Gel</h3>
+          <p class="product-desc">Pure aloe gel that soothes, hydrates, and cools the skin.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(63 reviews)</span></div>
+          <div class="product-price">LKR 1,490</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="Aloe Hydration Gel" data-price="1490">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/cleanser.png" alt="Natural Face Cleanser" class="product-img">
+          <span class="product-badge product-badge-new">New</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Natural Face Cleanser</h3>
+          <p class="product-desc">Gentle cleanser with chamomile and green tea for a fresh, clean feel.</p>
+          <div class="product-stars">★★★★☆ <span class="review-count">(41 reviews)</span></div>
+          <div class="product-price">LKR 1,750</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="Natural Face Cleanser" data-price="1750">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/daycream.png" alt="Brightening Day Cream" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Brightening Day Cream</h3>
+          <p class="product-desc">Daily moisturiser with niacinamide for a soft, protected glow.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(55 reviews)</span></div>
+          <div class="product-price">LKR 2,200</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="Brightening Day Cream" data-price="2200">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/spotcream.png" alt="Tea Tree Spot Care" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Tea Tree Spot Care</h3>
+          <p class="product-desc">Targeted spot care with tea tree oil for blemish-prone skin.</p>
+          <div class="product-stars">★★★★☆ <span class="review-count">(38 reviews)</span></div>
+          <div class="product-price">LKR 1,350</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn" data-name="Tea Tree Spot Care" data-price="1350">
+              <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+            </button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="/images/rose water.png" alt="Rose Water Toner" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Rose Water Toner</h3>
+          <p class="product-desc">Refreshing toner that hydrates and balances skin after cleansing.</p>
+          <div class="product-stars">★★★★★ <span class="review-count">(72 reviews)</span></div>
+          <div class="product-price">LKR 1,600</div>
+          <div class="product-buttons">
+            <button class="btn btn-primary btn-sm add-cart-btn"
+        data-name="GlowSkin Vitamin C Serum"
+        data-price="2850">
+  <i class="fa-solid fa-bag-shopping"></i>
+  Add to Cart
+</button>
+            <a href="reviews.html" class="btn btn-outline btn-sm">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom">
+    <p>© 2025 GlowSkin Naturals · Natural Skincare Store</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
