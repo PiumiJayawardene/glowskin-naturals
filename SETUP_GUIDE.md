@@ -52,18 +52,18 @@ glowskin/
 5. Click "Create stream"
 
 ### Step 3: Find Your Measurement ID
-1. After creating stream → you'll see: **G-XXXXXXXXXX**
+1. After creating stream → you'll see: **G-S4M1JQSBMB**
 2. Copy this ID (it starts with G-)
 
 ### Step 4: Add to Your Website
 Open `index.html` and find these lines (near the top, in <head>):
 ```html
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4M1JQSBMB"></script>
 <script>
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-S4M1JQSBMB');
 </script>
 ```
-Replace BOTH instances of `G-XXXXXXXXXX` with your real ID.
+Replace BOTH instances of `G-S4M1JQSBMB` with your real ID.
 
 ### Step 5: Test GA4 is Working
 1. Open your live website in Chrome
@@ -426,7 +426,7 @@ Take these screenshots and label them for your journal article / presentation:
 □ index.html opened in browser and looks correct
 □ All 6 sections visible: Home, Products, Reviews, Social, About, Contact
 □ Mobile responsive (test by resizing browser window)
-□ GA4 Measurement ID replaced (G-XXXXXXXXXX → your real ID)
+□ GA4 Measurement ID replaced (G-S4M1JQSBMB → your real ID)
 □ Meta Pixel ID replaced (META_PIXEL_ID_HERE → your real ID)
 □ Google Form created with all 20 questions
 □ Google Form link pasted (https://docs.google.com/forms/d/e/1FAIpQLSfaPi4slLabPhe-GNXSVw2Zmjw1OLrXjboKRof2g9LixX2TIg/viewform?usp=header → your real URL)
